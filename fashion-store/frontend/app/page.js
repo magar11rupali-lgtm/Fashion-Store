@@ -5,10 +5,10 @@ import Hero from './components/Hero';
 
 export default function Home() {
   return (
-    <div>
-          <Header />
-          <Hero />
-          <Footer />
-        </div>
+    <div className="app1">
+      <Header />   
+      <Hero />
+      <Footer />
+    </div>
   );
 }
