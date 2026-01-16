@@ -1,9 +1,9 @@
 import { getProductById } from '@/lib/api';
 import Image from 'next/image';
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import AddToCartButton from '@/components/AddToCartButton';
+import ProductActions from '@/components/ProductActions';
+
 
 export default async function ProductDetailPage({ params }) {
   const { id } = params;
@@ -67,6 +67,7 @@ export default async function ProductDetailPage({ params }) {
 
           {/* Details Section */}
           <div className="flex flex-col">
+            <ProductActions product={product} inStock={inStock} />
             {/* Category Badge */}
             <div className="mb-4">
               <span className="bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full">
@@ -141,19 +142,6 @@ export default async function ProductDetailPage({ params }) {
                 </button>
               </div>
             </div>
-
-            {/* Add to Cart Button */}
-            <button
-              className={`w-full py-4 rounded-lg text-lg font-semibold transition-colors mb-4 ${
-                inStock
-                  ? 'bg-blue-600 text-white hover:bg-blue-700'
-                  : 'bg-gray-300 text-gray-500 cursor-not-allowed'
-              }`}
-              disabled={!inStock}
-            >
-              {inStock ? 'Add to Cart' : 'Out of Stock'}
-            </button>
-
             {/* Back to Products */}
             <Link
               href="/products"

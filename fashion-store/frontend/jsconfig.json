@@ -1,17 +1,18 @@
-// {
-//   "compilerOptions": {
-//     "paths": {
-//       "@/*": ["./*"]
-//     }
-//   }
-// }
-
 {
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./frontend/app/*"]
+      "@/*": ["./*"]
     }
   }
 }
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./frontend/app/*"]
+//     }
+//   }
+// }
 
