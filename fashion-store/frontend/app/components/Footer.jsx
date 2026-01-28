@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Fashion Store</h3>
             <p className="text-gray-400">
-              Your one-stop shop for trendy fashion.
+                Your one-stop shop for trendy fashion.
             </p>
           </div>
           <div>

@@ -35,7 +35,7 @@ export default function Header() {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-gray-800">
-              Fashion Store
+               Fashion Store
             </Link>
             
             <div className="hidden md:flex space-x-8">

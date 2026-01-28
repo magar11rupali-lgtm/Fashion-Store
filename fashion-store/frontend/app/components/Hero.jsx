@@ -9,7 +9,7 @@ export default function Hero() {
           Discover Your Style
         </p>
         <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
-          Shop Now
+           Shop Now
         </button>
       </div>
     </section>
